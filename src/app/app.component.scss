@@ -1,6 +1,10 @@
-h2 {
-  margin: 0;
+.sidebar-container {
+  width: 100%;
+  height: 100%;
+  margin: 10px 0px;
+  border: 1px solid #555;
 }
+
 .asw-list {
   min-height: 595px;
   border-radius: 4px;
@@ -35,8 +39,8 @@ h2 {
 .alert {
   padding: 0.4rem 0.4rem !important;
   margin-bottom: 0.4rem !important;
-  
 }
+
 .asw-alert-primary {
   color: #fff !important;
   background-color: #2780e3 !important;

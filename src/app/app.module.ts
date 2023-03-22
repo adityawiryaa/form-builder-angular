@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { ClipboardModule } from '@angular/cdk/clipboard';
@@ -26,7 +26,8 @@ import { AswTextFieldModule } from '@asoftwareworld/form-builder/form-control/te
 import { MatCardModule } from '@angular/material/card';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MatIconModule } from '@angular/material/icon';
-
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { AswHeaderModule } from '@asoftwareworld/form-builder/form-control/header';
 @NgModule({
   declarations: [
     AppComponent
@@ -43,6 +44,7 @@ import { MatIconModule } from '@angular/material/icon';
     AswRadioButtonModule,
     AswJsonPreviewDialogModule,
     AswNumberModule,
+    AswHeaderModule,
     AswCalculationModule,
     AswAutocompleteModule,
     AswButtonModule,
@@ -56,8 +58,10 @@ import { MatIconModule } from '@angular/material/icon';
     MatCardModule,
     MatExpansionModule,
     MatIconModule,
+    MatSidenavModule,
+
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent,]
 })
 export class AppModule { }
